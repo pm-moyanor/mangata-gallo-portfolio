@@ -1,4 +1,11 @@
-let obj = {};
+let obj = {
+    saySetup : function(){
+        
+    },
+    sayPunchLine : function(){
+
+    }
+};
 const BASE_URL = "https://v2.jokeapi.dev/joke/Christmas";
 
 async function sayJoke() {
@@ -17,6 +24,7 @@ async function getData() {
     obj.id = data.id;
     obj.setup = data.setup;
     obj.delivery = data.delivery;
+    
 
     return obj;
   } catch (error) {
@@ -24,7 +32,13 @@ async function getData() {
   }
 }
 
+
 getData();
+
+async function getKata(apiUrl,jokeId){
+    try{const response = await fetch(apiUrl)
+    }
+}
 
 async function displayData() {
   const joke = document.getElementsByTagName("h3");
