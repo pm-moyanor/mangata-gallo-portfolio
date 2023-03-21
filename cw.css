@@ -1,59 +1,43 @@
-.container {
-    /* Add rules here */
-    display: grid;
-    max-width: 900px;
-    min-height: 50vh;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto 1fr auto auto;
-    grid-template-areas: "header" "left" "main" "right" "footer";
-}
-/* Add media rules for container class below */
-@media (min-width: 440px) {
-    .container {
-    /* Add rules here */
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: auto 1fr auto;
-
-    grid-template-areas: "header header header" 
-                     "left main right" 
-					 "footer footer footer";
-    }
-}
-
-
 /* Properties for other selectors */
-.header {
-    grid-area: header;
-    padding: 10px;
-    background-color:black;
-    color: #fff;
-    text-align: center;
+* {
+	padding: 0;
+	margin: 0;
+	color: pink;
 }
   
-.main {
-    grid-area: main;
-    padding: 25px;
+.container {
+	min-height: 100vh;
+	background-color:bisque;
 }
   
-.left {
-    grid-area: left;
-    background-color: peachpuff;
-  }
-  
-.right {
-    grid-area: right;
-  }
-  
-.footer {
-    grid-area: footer;
-    padding: 10px;
-    background-color:black;
-    color: #fff;
-    text-align: center;
-  }
-  
-.sidebar {
-    padding: 25px;
-    background-color:darkcyan;
-  }
-  
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+
+p{
+	text-align: center;
+	background-color: rgb(250, 150, 100);
+	width: 70px;
+	margin-right: 1.5px;
+	border-radius: 15%;
+	border-color: rgb(250, 125, 75);
+	border-style: solid;
+}
+/* Add rules for steps 8 and 9 */
+p .letters + p:nth-child(even) :hover{
+	transform: rotateY(360deg);
+transition: 0.5s;
+}
+
+/* Add rules for steps 10 and 11 */
+p .letters + p:nth-child(odd) :hover{
+	transform: rotateX(360deg);
+	transition: 1.5s;
+}
