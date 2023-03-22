@@ -1,43 +1,49 @@
-/* Properties for other selectors */
-* {
-	padding: 0;
-	margin: 0;
-	color: pink;
+*{
+    margin: 0;
+
 }
+
+body{
+    min-height: 100vh;
+}
+
+.contairner{
+    display: flex;
+    flex-direction: column;
   
-.container {
-	min-height: 100vh;
-	background-color:bisque;
-}
-  
-.letters {
-	display: flex;
-	justify-content: center;
-	padding-top: 20px;
-	margin-bottom: 20px;
-	text-transform:uppercase;
-	font-size: 60px;
+
+    
 }
 
-/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
 
-p{
-	text-align: center;
-	background-color: rgb(250, 150, 100);
-	width: 70px;
-	margin-right: 1.5px;
-	border-radius: 15%;
-	border-color: rgb(250, 125, 75);
-	border-style: solid;
-}
-/* Add rules for steps 8 and 9 */
-p .letters + p:nth-child(even) :hover{
-	transform: rotateY(360deg);
-transition: 0.5s;
+
+.main *{
+    border: 1px solid red;
 }
 
-/* Add rules for steps 10 and 11 */
-p .letters + p:nth-child(odd) :hover{
-	transform: rotateX(360deg);
-	transition: 1.5s;
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section2{
+    display:flex;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
