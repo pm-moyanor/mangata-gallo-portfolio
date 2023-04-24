@@ -110,37 +110,41 @@ section:last-child {
 }
 
 article {
-  flex: 0 1 350px; /* Set a fixed width for the article */
-  background-color: #333;
-
+  flex: 0 1 350px; 
+  background-color: #ffffff;
+  padding: 20px 50px;
   text-align: center;
+  margin: 10px;
 }
+
+
 
 article img {
   padding: 20px 0px 20px 0px;
   width: 100%;
   height: auto;
-
   animation-delay: 250ms;
 }
 
-article img:hover {
+/* article img :hover {
   animation: enlarge 0.3s ease-in-out forwards;
-}
+} */
 
 article h2 {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 article p {
   border-top: 1px rgba(255, 255, 255, 0.434) solid;
   margin-top: 20px;
   padding-top: 20px;
+  font-size: 16px;
   text-align: justify;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-/* Style the footer section */
+
 .footer {
   margin-top: auto;
   height: 80px;
