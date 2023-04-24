@@ -26,15 +26,7 @@ body {
   }
 }
 
-/* Set styles for the header, nav, main, and footer sections */
-header,
-nav,
-main,
-footer {
-  background-color: white;
-  display: block;
-  width: 100%;
-}
+
 
 /* Style the header section */
 header {
@@ -109,6 +101,13 @@ section:last-child {
   padding: 40px;
 }
 
+.main-section_articles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 10px;
+}
 article {
   flex: 0 1 350px; 
   background-color: #ffffff;
@@ -143,6 +142,27 @@ article p {
   text-align: justify;
   color: rgb(0, 0, 0);
 }
+
+#main-section_contact {
+display: flex;
+justify-content: center;
+background-color: white;
+
+}
+
+#form {
+display: flex;
+flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
 
 
 .footer {
