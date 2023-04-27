@@ -7,11 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="container">
+ 
       <header id="header">
      
           <img
@@ -21,14 +21,21 @@
         />
         
     
-        <nav class="nav">
-          <ul class="nav-links">
+        <nav class="navbar">
+          <ul class="navbar-links">
    
             <li><a href="#main-section_about">About</a></li>
             <li><a href="#main-section_articles">Collections</a></li>
             <li><a href="#main-section_contact">Contact</a></li>
           </ul>
         </nav>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        
+        </div>
+
+
       </header>
 
       <main class="main">
@@ -40,17 +47,20 @@
         </section>
 
         <section id="main-section_about">
-          <div class="about-img" > <img  src="mangata&gallo-assets/khaled-ghareeb-OI1MEinU9sQ-unsplash.jpg"/>
-          </div>
           <div class="about-text">
-          <p><span>Welcome</span> to Mangata&Gallo, the independent jewelry brand founded by Maria Garat. Our minimalistic designs with ethnic influences are inspired by Maria's travels and multicultural experiences.
-
-            We believe in creating unique, one-of-a-kind jewelry that reflects your individual style. Our pieces incorporate a range of materials, from precious stones to natural elements, and are crafted with the utmost care and attention to detail.
-            
-             Whether you're looking for the perfect gift or a special treat for yourself, we have something for everyone.
-            
-            Browse our collections to find your next favorite piece, We can't wait to see you shine in our jewelry.</p>
+            <p><span>Welcome</span> to Mangata&Gallo, the independent jewelry brand founded by Maria Garat. Our minimalistic designs with ethnic influences are inspired by Maria's travels and multicultural experiences.
+  
+              We believe in creating unique, one-of-a-kind jewelry that reflects your individual style. Our pieces incorporate a range of materials, from precious stones to natural elements, and are crafted with the utmost care and attention to detail.
+              
+               Whether you're looking for the perfect gift or a special treat for yourself, we have something for everyone.
+              
+              Browse our collections to find your next favorite piece, We can't wait to see you shine in our jewelry.</p>
+            </div>
+          <div class="about-img" > 
+            <img  src="mangata&gallo-assets/khaled-ghareeb-OI1MEinU9sQ-unsplash.jpg">
           </div>
+         
+
         </section>
 
         <section id="main-section_articles">
@@ -113,10 +123,14 @@
             </p>
           </article>
         </section>
+
+
         <section id="main-section_contact">
-          <h2>Contact us</h2>
-          <p> reach out to us with any questions or custom requests.
-          </p>
+          <div contact-text_box>
+            <h2>Contact us</h2>
+            <p> Reach out to us with any questions or custom requests</p>
+          </div>
+      
           <form id="form">
             <div></div>
             <label>name</label>
@@ -129,6 +143,8 @@
 
           </form>
         </section>
+
+
       </main>
       <footer class="footer">
         <div class="footer-logo">
@@ -136,7 +152,8 @@
         </div>
         <div class="footer-copyright">Copyright © 2023 Maria Garat Design</div>
       </footer>
-    </div>
+      <script src="https://kit.fontawesome.com/bafa5af875.js" crossorigin="anonymous"></script>
     <script src="mangata&gallo.js"></script>
+
   </body>
 </html>
