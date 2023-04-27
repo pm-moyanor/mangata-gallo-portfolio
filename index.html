@@ -12,21 +12,25 @@
 
   <body>
     <div class="container">
-      <header class="header">
-        <img
+      <header id="header">
+     
+          <img
           class="header-logo"
-          src="./mangata&gallo-assets/Asset 4@3x.png"
+          src="./mangata&gallo-assets/Asset 1@3x.png"
           height="35vh"
         />
+        
+    
+        <nav class="nav">
+          <ul class="nav-links">
+   
+            <li><a href="#main-section_about">About</a></li>
+            <li><a href="#main-section_articles">Collections</a></li>
+            <li><a href="#main-section_contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="#main-section_articles">Collections</a></li>
-          <li><a href="#main-section_contact">contact</a></li>
-        </ul>
-      </nav>
+
       <main class="main">
         <section class="main-section_banner">
           <img
@@ -34,7 +38,22 @@
             alt="promotional banner"
           />
         </section>
-        <section class="main-section_articles">
+
+        <section id="main-section_about">
+          <div class="about-img" > <img  src="mangata&gallo-assets/khaled-ghareeb-OI1MEinU9sQ-unsplash.jpg"/>
+          </div>
+          <div class="about-text">
+          <p><span>Welcome</span> to Mangata&Gallo, the independent jewelry brand founded by Maria Garat. Our minimalistic designs with ethnic influences are inspired by Maria's travels and multicultural experiences.
+
+            We believe in creating unique, one-of-a-kind jewelry that reflects your individual style. Our pieces incorporate a range of materials, from precious stones to natural elements, and are crafted with the utmost care and attention to detail.
+            
+             Whether you're looking for the perfect gift or a special treat for yourself, we have something for everyone.
+            
+            Browse our collections to find your next favorite piece, We can't wait to see you shine in our jewelry.</p>
+          </div>
+        </section>
+
+        <section id="main-section_articles">
           <article>
             <div>
               <img
@@ -96,6 +115,8 @@
         </section>
         <section id="main-section_contact">
           <h2>Contact us</h2>
+          <p> reach out to us with any questions or custom requests.
+          </p>
           <form id="form">
             <div></div>
             <label>name</label>
@@ -116,5 +137,6 @@
         <div class="footer-copyright">Copyright © 2023 Maria Garat Design</div>
       </footer>
     </div>
+    <script src="mangata&gallo.js"></script>
   </body>
 </html>
